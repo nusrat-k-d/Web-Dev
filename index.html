@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+            /* text-align: center;
+            background-color:bisque;
+            border:2px solid black;
+            display: inline-block;
+            /* display: inline-flex; */
+            /* padding: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            background-color: bisque;
+        }
+
+        h2{
+            text-align: center;
+           
+        }
+
+        .form-div {
+            border: 2px solid black;
+            /* text-align: center; */
+            padding: 20px;
+            background-color: blanchedalmond;
+            box-shadow: 5px 5px 50px black;
+            border-radius: 25px;
+        }
+
+        .form-div input[type="text"],
+        .form-div input[type="number"],
+        .form-div input[type="email"] {
+
+            /*by this the text you are writitng in area will be centered*/
+            /* text-align: center; */
+            border: 2px solid black;
+            border-radius: 6px;
+            /* align-content: center;
+            justify-content: center; */
+        }
+
+        /*.form-div input[type="submit"]
+        {
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+        } */
+        .submit {
+            text-align: center;
+            /* justify-content: center;
+            align-content: center; */
+        }
+        #myself{
+            border: 2px solid black;
+            border-radius: 7px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 7px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-div">
+        <h2 class="form">FORM</h2>
+        <form action="/submit">
+            <label for="name" class="submit">NAME:</label><br>
+            <input type="text" id="name" name="name" class="name" placeholder="Enter name" required>
+            <br><br>
+            <label for="age" class="submit">AGE:</label><br>
+            <input type="text" id="age" name="age" class="age" placeholder="Enter age" required>
+            <br><br>
+            <label for="Gender">GENDER:</label>
+            <br>
+            <input type="radio" id="male" name="radio" class="male">
+            <label for="male">MALE</label>
+            <br> <!--to get only one to be selected you should name all radio buttons same-->
+            <input type="radio" id="femalle" name="radio" class="female">
+            <label for="female">FEMALE</label>
+            <br><br>
+            <label for="email">E-MAIL:</label><br>
+            <input type="email" id="email" name="email" class="emaail" placeholder="Enter email">
+            <br><br>
+            <label for="checkbox">HOBBIES:</label>
+            <br>
+            <input type="checkbox" id="Option1" name="Option1">
+            <label for="Optiona1">Reading</label>
+            <br>
+            <input type="checkbox" id="Option2" name="Option2">
+            <label for="Option2">Coding</label>
+            <br>
+            <input type="checkbox" id="Option3" name="Option3">
+            <label for="Option3">Writitng</label>
+            <br><br>
+            <label for="city">CITY:</label>
+            <select name="city" id="city">
+                <option value="Vadodara">Vadodara</option>
+                <option value="Surat">Surat</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+            <br><br>
+            <label for="myself">MY-SELF:</label>
+            <br>
+            <textarea name="myself" id="myself" cols="20" rows="5" placeholder="Enter about yourslef"></textarea>
+            <br><br>
+            <div class="submit">
+                <input type="submit" value="submit">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
